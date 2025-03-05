@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Obuci Jaknu</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body class="page">
+<header class="page__header">
+    <h1 class="page__header__title">Obuci Jaknu</h1>
+</header>
+<main class="page__main">
+    <div class="page__main__content">
+        <section class="page__main__content__form">
+            <h2 class="page__main__content__form__title">Izaberi lokaciju</h2>
+            <input type="text" class="page__main__content__form__input" id="city" placeholder="City Name">
+            <select name="countries" class="page__main__content__form__input" id="countryCode">
+                <option selected disabled value="">Izaberi državu</option>
+            </select>
+            <button class="page__main__content__form__button" id="submitLocation">Posavjetuj me</button>
+            <div class="page__main__content__form__error" id="error"></div>
+        </section>
+        <section class="page__main__content__forecast" id="show"></section>
+        <section class="page__main__content__advice" id="advice"></section>
+        <div id="decision-result"></div>
+    </div>
+    <div class="page__main__wear-jacket">
+        <h2 class="page__main__wear-jacket__title">Oli se obuć?</h2>
+        <div class="page__main__wear-jacket__wrapper">
+            <button class="page__main__wear-jacket__wrapper__button__yes" id="wear-jacket-button-yes">Oću</button>
+            <button class="page__main__wear-jacket__wrapper__button__no" id="wear-jacket-button-no">Neću</button>
+        </div>
+        <div class="page__main__wear-jacket__give-average">
+        </div>
+    </div>
+</main>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
